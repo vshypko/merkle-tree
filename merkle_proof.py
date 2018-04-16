@@ -43,7 +43,7 @@ def recurse_down(tx, tx_id, root, transactions):
             transactions.append(Node('r', right_child.data))
             return recurse_down(tx, tx_id, left_child, transactions)
         else:
-            transactions.append(Node('l',left_child.data))
+            transactions.append(Node('l', left_child.data))
             return recurse_down(tx, tx_id, right_child, transactions)
 
 
